@@ -23,6 +23,7 @@ module.exports = {
     'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
     'semi': ['error', 'always'],
     'indent': 'off',
-    'no-console': 'off'
+    'no-console': 'off',
+    'no-unused-vars':'off'
   }
 }
