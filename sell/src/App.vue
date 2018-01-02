@@ -10,15 +10,15 @@
        </div>
        <div class="tab-item">
           <router-link to="/seller">商家</router-link>
-       </div>  
+       </div>
     </div>
-    <router-view></router-view>
+    <router-view :seller="seller" keep-alive></router-view>
   </div>
 </template>
 
 <script type="text/ecmascript-6">
   import header from './components/header/header.vue';
-  
+
   const ERR_OK = 0;
 
   export default {
@@ -44,7 +44,7 @@
 
 <style lang="stylus" rel="stylesheet/stylus">
   @import "./common/stylus/mixin.styl";
-  
+
   #app
     .tab
         display: flex
