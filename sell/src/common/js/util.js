@@ -14,7 +14,7 @@ export function urlParse() {
 			let tempArr = item.substring(1).split('=');
 			let key = decodeURIComponent(tempArr[0]);
 			let val = decodeURIComponent(tempArr[1]);
-			obj[key] = val;
+      obj[key] = val;
 		});
 	}
 	return obj;
